@@ -1,0 +1,198 @@
+body{
+    background: #eeee;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.indexHeading{
+    font-family: 'Iceberg', cursive;
+    color: #575859;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.spacingBarDark{
+    background: #575859;
+    width: 100%;
+    height: 1.5px;
+    display: inline-block;
+    margin-top: 25px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width:500px){
+    .indexHeading{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+}
+
+.alignLeft{
+    text-align: left;
+}
+
+.alignRight{
+    text-align: right;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+
+.robotJuice{
+    color: rgb(195,17,11);
+    font-family: 'Damion', cursive;
+    font-size: 62px;
+    margin: 21px;
+    display: inline;
+    margin-left: 0px;
+}
+
+.juiceText{
+    color: rgb(0,0,0);
+    font-family: 'Damion', cursive;
+}
+
+.robotJuiceText2{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51,51,51);
+    display: block;
+    width: auto;
+    text-align: right;
+    transform: translate(-15px,-25px);
+    
+}
+
+.logoContainer{
+    display: inline-block;
+}
+
+
+.navigationBar{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(195, 193, 188);
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.navigationBar a{
+    text-align: center;
+    color: rgb(87,88,89);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: 0.1s;
+    position: relative;
+}
+
+.navigationBar a::after{
+    content: " ";
+    height: 50%;
+    width: 1px;
+    display: inline-block;
+    background-color: rgb(195, 193, 188);
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.navigationBar a:last-child::after{
+    background:transparent;
+}
+
+.navigationBar a:hover{
+    background: rgb(195,17,11);
+    color: white;
+}
+
+.navigationBar a:hover:after{
+    background: transparent;
+}
+
+
+.navigationBar a.current {
+    background: rgb(195,17,11);
+    display: inline-block;
+    grid-column: 1;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navigationBar a.current::after{
+    background-color: transparent;
+}
+
+.robotJuiceBanner{
+    width: 100%;
+    border-bottom: solid 10px;
+    border-color: #999999;
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+    body{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .navigationBar{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .navigationBar a:nth-child(3)::after{
+        background: transparent;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .navigationBar{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .navigationBar a:nth-child(2)::after{
+        background: transparent;
+    }
+    .navigationBar a:nth-child(4)::after{
+        background: transparent;
+    }
+    .navigationBar a:nth-child(3)::after{
+        background: rgb(195, 193, 188);
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .robotJuice{
+        font-size: 36px;
+        margin: 12px;
+    }
+    .navigationBar{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .robotJuiceText2{
+        font-size: 9px;
+        transform: translate(-10px,-15px);
+    }
+}
