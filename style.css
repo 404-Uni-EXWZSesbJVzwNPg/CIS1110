@@ -1,10 +1,25 @@
 body{
     background: #eeee;
-    padding-left: 10%;
-    padding-right: 10%;
-    
 }
 
+/* header{
+    padding-left: 10%;
+    padding-right: 10%;
+} */
+
+/* @media screen and (max-width:900px){
+    header{
+        padding-left:5%;
+        padding-right: 5%;
+    }
+} */
+
+/* @media screen and (max-width:300px){
+    header{
+        padding-left:0px;
+        padding-right: 0px;
+    }
+} */
 .indexHeading{
     font-family: 'Iceberg', cursive;
     color: #575859;
@@ -175,12 +190,6 @@ body{
 }
 
 
-@media screen and (max-width: 1000px){
-    body{
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-}
 
 @media screen and (max-width: 800px){
     .navigationBar{
@@ -209,10 +218,6 @@ body{
 }
 
 @media screen and (max-width: 500px){
-    body{
-        padding-left: 5px;
-        padding-right: 5px;
-    }
     .robotJuice{
         font-size: 36px;
         margin: 12px;
