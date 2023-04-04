@@ -1,5 +1,11 @@
 body{
     background: #eeee;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header{
@@ -65,11 +71,13 @@ body{
     margin: 21px;
     display: inline;
     margin-left: 0px;
+    font-weight: 400;
 }
 
 .juiceText{
     color: rgb(0,0,0);
     font-family: 'Damion', cursive;
+    margin-left: 20px;
 }
 
 .robotJuiceText2{
@@ -95,8 +103,6 @@ body{
     border-left-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .navigationBar a{
@@ -157,12 +163,6 @@ body{
     border-color: #999999;
 }
 
-.itemDisplay{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 40px;
-    gap: 25px;
-}
 
 .itemDisplay h2{
     font-family: 'Iceberg', cursive;
@@ -172,7 +172,7 @@ body{
 
 .itemDisplay h3{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 0.02rem;
     font-weight: 400;
 }
@@ -182,30 +182,16 @@ body{
     width: 100%;
 }
 
-@media screen and (max-width: 700px){
-    .itemDisplay{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-}
 
 
 
 @media screen and (max-width: 800px){
-    .navigationBar{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
     .navigationBar a:nth-child(3)::after{
         background: transparent;
     }
 }
 
 @media screen and (max-width: 400px){
-    .navigationBar{
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
     .navigationBar a:nth-child(2)::after{
         background: transparent;
     }
@@ -219,7 +205,7 @@ body{
 
 @media screen and (max-width: 500px){
     .robotJuice{
-        font-size: 36px;
+        font-size: 48px;
         margin: 12px;
     }
     .navigationBar{
@@ -232,18 +218,51 @@ body{
     }
 }
 
-
-.sectionTwo{
-    display: flex;
-    gap: 8rem;
-    margin-top: 4rem;
+@media screen and (max-width: 300px){
+    .robotJuice{
+        font-size: 36px;
+        margin: 12px;
+    }
 }
 
-.readersPollContainer section{
+
+.pollRadioContainer{
+    height: 200px;
+}
+
+.radioContainer label{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.radioContainer label:first-of-type{
+    margin-top: 0.5rem;
+}
+
+.radioContainer label:last-of-type{
+    margin-bottom: 2rem;
+}
+
+.radioContainer{
+    padding: 0;
+}
+
+
+
+
+.readersPollContainer .outsideBox{
     min-width: 20rem;
     background-color: white;
     padding: 1rem;
     min-height: 20rem;
+}
+
+@media screen and (max-width:800px){
+    .readersPollContainer .outsideBox{
+        min-width: auto;
+    }
 }
 
 .readersPollContainer h2{
@@ -261,6 +280,10 @@ body{
     color: #c8110b;
 }
 
+.readersPollContainer p{
+    font-size: 14px;
+}
+
 
 
 .sectionTwo h2{
@@ -269,10 +292,6 @@ body{
     font-size: 28px;
 }
 
-.newsEntry{
-    display: flex;
-    flex-direction: column;
-}
 
 .newsEntry h3{
     font-family: Arial, Helvetica, sans-serif;
@@ -295,3 +314,27 @@ body{
     text-align: right;
     font-style: italic;
 }
+
+footer{
+    border-top: 1px #575859 solid;
+    background-color: white;
+    min-height: 100px;
+}
+
+footer h2, footer p, footer a{
+    color: #ff150e;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+footer h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+footer a{
+    width: 100%;
+    display: block;
+    margin: 15px 0px 15px 0px;
+}
+
