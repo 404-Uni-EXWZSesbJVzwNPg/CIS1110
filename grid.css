@@ -223,3 +223,41 @@ footer{
         width: auto;
     }
 }
+
+#reviews{
+    margin-top: 35px;
+}
+
+#reviews .review{
+    display: flex;
+    gap: 2rem;  
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#reviews .review h5{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#reviews .review h3{
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#reviews .review p{
+    width: 100%;
+}
+
+#reviews .review section{
+    width: 40%;
+}
+
+#reviews .spacingBarDark{
+    height: 1px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
