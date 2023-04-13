@@ -171,6 +171,30 @@ footer{
     gap: 3rem;
 }
 
+@media screen and (max-width:1400px){
+    .productDisplay{
+        grid-template-columns: 0.1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .productDisplay{
+        grid-template-rows: auto auto auto;
+        gap: 1rem;
+    }  
+    .productDisplay .mainImageHolder{
+        grid-column: 1 / span 3;
+    }
+    .productDisplay .informationDisplay{
+        grid-row: 3;
+        grid-column: 1 / span 3;
+    }
+    .productDisplay .sideImages{
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+}
+
 .readAllReviews{
     display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 45px; margin-bottom: 35px;
 }
@@ -187,7 +211,15 @@ footer{
     gap: 1rem;
 }
 
-
 .socials{
     display: flex;
+}
+
+@media screen and (max-width:1000px){
+    .similarProducts{
+        flex-direction: column;
+    }
+    .similarProducts h4{
+        width: auto;
+    }
 }
