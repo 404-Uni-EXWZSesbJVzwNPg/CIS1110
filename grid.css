@@ -1,0 +1,277 @@
+body main, body header{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media screen and (max-width: 800px){
+    main{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    main{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+.newsEntry{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionTwo{
+    display: flex;
+    gap: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1000px){
+    .sectionTwo{
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .sectionTwo{
+        flex-direction: column;
+    }
+}
+
+
+.itemDisplay{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    gap: 25px;
+}
+
+@media screen and (max-width: 700px){
+    .itemDisplay{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.navigationBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 800px){
+    .navigationBar{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .navigationBar{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 0;
+    }
+}
+
+footer{
+    width: 100vw;
+    position: relative;
+    padding-top: 35px;
+}
+
+.footerGrid{
+    display: grid;
+    width: 80%;
+    height: 100%;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5rem;
+    padding-left: 10%;
+}
+
+.footerGrid section:first-of-type{
+    max-width: 50ch;
+}
+
+@media screen and (max-width: 800px){
+    .footerGrid{
+        grid-template-columns: 0.3fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+    }
+
+    .footerGrid img{
+        margin-right: 5rem;
+
+    }
+
+    .footerGrid section:last-of-type{
+        width: 100%;
+        grid-row: 2;
+        grid-column: 2;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .footerGrid{
+        gap: 2em;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+    .footerGrid section:first-of-type{
+        grid-row: 2;
+        grid-column: 1 / span 3;
+        width: 100%;
+    }
+    .footerGrid section:last-of-type{
+        grid-row: 3;
+        grid-column: 1 / span 3;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .footerGrid section:first-of-type{
+        grid-column: 1;
+    }
+}
+
+.footerTwo{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap:5%;
+}
+
+.footerTwo section:first-of-type{
+    width: 60%;
+}
+
+@media screen and (max-width: 800px){
+    .footerTwo{
+        flex-direction: column;
+    }
+    .footerTwo section:first-of-type{
+        width: 100%;
+    }
+    .footerTwo section{
+        width: 100%;
+    }
+}
+
+.productDisplay{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr auto;
+    grid-template-rows: 1fr;
+    margin-top: 35px;
+    gap: 3rem;
+}
+
+@media screen and (max-width:1400px){
+    .productDisplay{
+        grid-template-columns: 0.1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .productDisplay{
+        grid-template-rows: auto auto auto;
+        gap: 1rem;
+    }  
+    .productDisplay .mainImageHolder{
+        grid-column: 1 / span 3;
+    }
+    .productDisplay .informationDisplay{
+        grid-row: 3;
+        grid-column: 1 / span 3;
+    }
+    .productDisplay .sideImages{
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+}
+
+.readAllReviews{
+    display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 45px; margin-bottom: 35px;
+}
+
+.similarProducts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.informationDisplay .dropdowns{
+    display: flex;
+    gap: 1rem;
+}
+
+.socials{
+    display: flex;
+}
+
+@media screen and (max-width:1000px){
+    .similarProducts{
+        flex-direction: column;
+    }
+    .similarProducts h4{
+        width: auto;
+    }
+}
+
+#reviews{
+    margin-top: 35px;
+}
+
+#reviews .review{
+    display: flex;
+    gap: 2rem;  
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#reviews .review h5{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#reviews .review h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#reviews .review p{
+    width: 100%;
+}
+
+#reviews .review section{
+    width: 40%;
+}
+
+#reviews .review img{
+    max-height: 96px;
+}
+
+@media screen and (max-width: 800px){
+    #reviews .review{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    #reviews .review p{
+        grid-column: 2;
+    }
+}
+
+
+#reviews .spacingBarDark{
+    height: 1px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+

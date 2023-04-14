@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
     <title>Robot Juice</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Iceberg&display=swap" rel="stylesheet">
-    
+     <script src="/jquery.js"></script>
+    <script src="/poll.js"></script>
     
 </head>
 <body>
@@ -18,42 +20,126 @@
             <h1 class="robotJuice">Robot<span class="juiceText">Juice</span></h1>
             <h2 class="robotJuiceText2">ficticous cycle lubricants</h2>
         </div>
-        <nav class="navigationBar">
-            <a href="" class="current">Home</a>
-            <a href="" class="">Products</a>
+        <nav class="navigationBar" >
+            <a href="index.html" class="current">Home</a>
+            <a href="product.html" class="">Products</a>
             <a href="" class="">Protect</a>
             <a href="" class="">Stocklist's</a>
             <a href="" class="">Events</a>
             <a href="" class="">Reviews</a>
         </nav>
     </header>
-    <img src="/images/robotbanner.jpg" alt="RobotJuice Banner" class="robotJuiceBanner">
-    <article>
-        <h2 class="indexHeading alignCenter">Robot Juice is the ultimate ficticous bicycle and motorcycle lubricant oils</h2>
-    </article>
-    <span class="spacingBarDark"></span>
-    <article class="itemDisplay">
-        <section>
-            <img src="/images/bikechain-bikeoil.jpg" alt="Bikechain">
-            <h2>Bike Oil</h2>
-            <h3>Stops and protects against rust, reduces friction on moving parts and is essential on any cycle.</h3>
+    <main>
+        <section class="center">
+            <img src="/images/robotbanner.jpg" alt="RobotJuice Banner" class="robotJuiceBanner">
+            <article>
+                <h2 class="indexHeading alignCenter">Robot Juice is the ultimate ficticous bicycle and motorcycle lubricant oils</h2>
+            </article>
+            <span class="spacingBarDark"></span>
+            <article class="itemDisplay">
+                <section>
+                    <img src="/images/bikechain-bikeoil.jpg" alt="Bikechain">
+                    <h2>Bike Oil</h2>
+                    <h3>Stops and protects against rust, reduces friction on moving parts and is essential on any cycle.</h3>
+                </section>
+                <section>
+                    <img src="/images/cycleside-drylubrication.jpg" alt="Dry Lubricant">
+                    <h2>Dry Lubricant</h2>
+                    <h3>Perfect chain lubricant for dry road riding. Resists water penetration and wash-off easily.</h3>
+                </section>
+                <section>
+                    <img src="/images/frontcycle-wetlubrication.jpg" alt="Wet Lubricant">
+                    <h2>Wet Lubricant</h2>
+                    <h3>A thick, heavy duty lube designed to suck to the chain in wet conditions. Ideal for extreme weather and long distance riding.</h3>
+                </section>
+                <section>
+                    <img src="/images/productreviews.jpg" alt="Product Reviews">
+                    <h2>Product Reviews</h2>
+                    <h3>Read what the press and our customers say about our excellent products.</h3>
+                </section>
+            </article>
+            <span class="spacingBarDark"></span>
+            <article class="sectionTwo">
+                <section class="latestNewsContainer">
+                    <h2>Latest News</h2>
+                    <section class="newsEntry">
+                        <h3>News Item One</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quos facilis molestias vero quasi obcaecati adipisci molestiae modi nobis earum exercitationem ut ex, atque unde distinctio? Fugiat reprehenderit numquam tempore.
+                        Numquam et non, harum aliquam architecto quas molestias repellat, facere atque excepturi nulla deleniti vero reprehenderit est impedit recusandae voluptates ipsa cumque amet pariatur consectetur? Magni error harum enim quia!</p>
+                        <h4>September, 2012</h4>
+                    </section>
+                    <section class="newsEntry">
+                        <h3>News Item Two</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quos facilis molestias vero quasi obcaecati adipisci molestiae modi nobis earum exercitationem ut ex, atque unde distinctio? Fugiat reprehenderit numquam tempore.
+                        Numquam et non, harum aliquam architecto quas molestias repellat, facere atque excepturi nulla deleniti vero reprehenderit est impedit recusandae voluptates ipsa cumque amet pariatur consectetur? Magni error harum enim quia!</p>
+                        <h4>September, 2012</h4>
+                    </section>
+                    <section class="newsEntry">
+                        <h3>News Item Three</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quos facilis molestias vero quasi obcaecati adipisci molestiae modi nobis earum exercitationem ut ex, atque unde distinctio? Fugiat reprehenderit numquam tempore.
+                        Numquam et non, harum aliquam architecto quas molestias repellat, facere atque excepturi nulla deleniti vero reprehenderit est impedit recusandae voluptates ipsa cumque amet pariatur consectetur? Magni error harum enim quia!</p>
+                        <h4>September, 2012</h4>
+                    </section>
+                </section>
+                <section class="readersPollContainer">
+                    <section class="outsideBox">
+                        <h2>Reader Poll</h2>
+                        <h3 class="red">Are Robot Juice the best and most usable and accessible fake oils around?</h3>
+                        <section class="radioContainer" id="radioContainer">
+                            <input type="radio" name="poll" id="pollYes" value="yes" id="readersPollYes">
+                            <label for="yes">Yes</label>
+                            <br>
+                            <input type="radio" name="poll" id="pollNo" value="no" id="readersPollNo">
+                            <label for="no">No</label>
+                        </section>
+                        <h2>Competition</h2>
+                        <p>
+                            Win absolutely nothing by entering this extremely expensive competibon Robot Juice will not send you a full range of our cycling and motorcycle oils and lubricants as we do not exist. But just for fun.
+                        </p>
+                        <p style="margin-top:5px; margin-bottom: 5px;">
+                            Which Film is our address made up from?
+                        </p>
+                        <p>
+                            a) Armageddon <br>
+                            b) Harry Potter <br>
+                            c) The Simpson (Movie)
+                        </p>
+                        <p style="margin-top:5px; margin-bottom: 5px;">
+                            answers on a postcard please.
+                        </p>
+                    </section>
+                </section>
+            </article>
         </section>
-        <section>
-            <img src="/images/cycleside-drylubrication.jpg" alt="Dry Lubricant">
-            <h2>Dry Lubricant</h2>
-            <h3>Perfect chain lubricant for dry road riding. Resists water penetration and wash-off easily.</h3>
+    </main>
+    <footer>
+        <section class="footerGrid">
+            <img src="images\cyclemagazine.jpg" alt="Cycle Magazine">
+            <section>
+                <h2>Latest Reviews</h2>
+                <p>
+                    Cycling magazine has given Robot Juice a 5 star rating in its latest reviews of dry lubricants. Robot Juice Dry lube was rated the highest out of over 40 top brand dry lubs.
+                </p>
+            </section>
+            <section>
+                <h2>Links</h2>
+                <a href="">Edge Hill University</a>
+                <a href="">Dave Walsh</a>
+                <a href="">https://twitter.com/walsh_d</a>
+                <a href="">CIS1110 - Web Design and Development module</a>
+            </section>
         </section>
-        <section>
-            <img src="/images/frontcycle-wetlubrication.jpg" alt="Wet Lubricant">
-            <h2>Wet Lubricant</h2>
-            <h3>A thick, heavy duty lube designed to suck to the chain in wet conditions. Ideal for extreme weather and long distance riding.</h3>
+        <section class="footerTwo">
+            <section>
+                <h4>Robot Juice Fictitious Products Not Ltd., Unit 9¾, Privet Drive, Little Whingening, Surrey DN18 5RP</h4>
+                <h4>Telephone: +44 (0)1695 657648. Email: waishd@edgehill.ac.uk</h4>
+            </section>
+            <section>
+                <span class="links"><a href="">Contact Us</a>|<a href="">Privacy</a>|<a href="">Terms & Conditions</a>|<a href="">Accessibility</a></span>
+                <h4>Copyright © 2018 Dave Walsh. Design by Dave Walsh </h4>
+            </section>
         </section>
-        <section>
-            <img src="/images/productreviews.jpg" alt="Product Reviews">
-            <h2>Product Reviews</h2>
-            <h3>Read what the press and our customers say about our excellent products.</h3>
-        </section>
-    </article>
+    </footer>
 </body>
 </html>
 
