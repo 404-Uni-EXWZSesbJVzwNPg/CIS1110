@@ -177,7 +177,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     .productDisplay{
         grid-template-rows: auto auto auto;
         gap: 1rem;
@@ -242,7 +242,6 @@ footer{
 }
 
 #reviews .review h3{
-    margin-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -253,6 +252,21 @@ footer{
 #reviews .review section{
     width: 40%;
 }
+
+#reviews .review img{
+    max-height: 96px;
+}
+
+@media screen and (max-width: 800px){
+    #reviews .review{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    #reviews .review p{
+        grid-column: 2;
+    }
+}
+
 
 #reviews .spacingBarDark{
     height: 1px;

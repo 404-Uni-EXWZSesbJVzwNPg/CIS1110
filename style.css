@@ -561,3 +561,17 @@ hr{
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+#reviews .review h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pollResult{
+    background-color: #840e0a;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 0.1rem;
+    font-weight: 500;
+}
