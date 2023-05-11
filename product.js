@@ -1,6 +1,6 @@
 
 $(function(){
-    var promise = $.ajax("https://cis1110apicw.computing.edgehill.ac.uk/reviews")
+    var promise = $.ajax("")
     promise.done((data) => {
          console.log(data)
          for(item in data.slice(0,5)){
