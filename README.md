@@ -5,6 +5,6 @@ I also had to integrate a couple of Javascript features into the finished websit
 
 # Viewing the website
 
-Viewing / Running the website does not require anything more than opening the html files or using [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+Viewing / Running the website does not require anything more than opening the HTML files or using [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 
