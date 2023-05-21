@@ -575,3 +575,9 @@ hr{
     border-radius: 0.1rem;
     font-weight: 500;
 }
+
+@media screen and (max-width: 500px){
+    .logoContainer h1{
+        margin-left: 0;
+    }
+}
